@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#bla" />
+  <title>Bocado secreto</title>
+  <link rel="icon" href="imagenes/Logo formal de Los cuchufli.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="container-fluid RosaMedio position-sticky top-0 header-fixed header-no-fixed">
+    <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+      <li class="nav-item Letras" role="presentation">
+        <a class="nav-link LetrasFnRosa" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+          role="tab" aria-controls="pills-home" aria-selected="true">Inicio</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active LetrasFnRosa" id="pills-Postres-tab" data-bs-toggle="pill" data-bs-target="#pills-Postres"
+          type="button" role="tab" aria-controls="pills-Postres" aria-selected="false">Postres</a>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <a class="nav-link LetrasFnRosa" id="pills-Jugos-tab" data-bs-toggle="pill" data-bs-target="#pills-Jugos" type="button"
+          role="tab" aria-controls="pills-Jugos" aria-selected="false">Mermeladas</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link LetrasFnRosa" id="pills-Tortas-tab" data-bs-toggle="pill" data-bs-target="#pills-Tortas"
+          type="button" role="tab" aria-controls="pills-Tortas" aria-selected="false">Tortas</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link LetrasFnRosa" id="pills-Carrito-tab" data-bs-toggle="pill" data-bs-target="#pills-Carrito" type="button"
+          role="tab" aria-controls="pills-Carrito" aria-selected="false">Carrito</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <div id="mi-carrito">
+          <img src="imagenes/shopping-cart.png" height="30">
+          <div id="articulos" >
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <div class="alert container position-sticky top-0 alert-primary hide header-fixed" role="alert">
+    Producto Añadido al carrito!
+  </div>
+  <div class="alert container position-sticky top-0 alert-danger remove header-fixed" role="alert">
+    Producto removido!
+  </div>
+  <!-- inicio del inicio -->
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner my-carousel-div">
+          <div class="carousel-item active">
+            <div class="parent d-flex justify-content-center">
+              <img src="imagenes/IMG-20240730-WA0001.jpg" alt="" height="500px">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="parent d-flex justify-content-center">
+              <img src="imagenes/IMG-20240730-WA0002.jpg" alt="" height="500px">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="parent d-flex justify-content-center">
+              <img src="imagenes/IMG-20240730-WA0003.jpg" alt="" height="500px">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="parent d-flex justify-content-center">
+              <img src="imagenes/IMG-20240730-WA0004.jpg" alt=""height="500px">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <h2 class="h4 m-4 Letras">Productos más comprados</h2>
+      <div class="col d-flex justify-content-center mb-4">
+         <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Cuchuflis</h5>
+            <img src="imagenes/Cuchufli.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Barquillos crujientes rellenos de dulce de leche, bañados en chocolate u otros dulces. 10 Unidades x $1550</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1550</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Pie de limon</h5>
+            <img src="imagenes/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Base crujiente de galleta, relleno cremoso de limón y coronado con merengue dorado. Trozo a $1000</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Brazo reina</h5>
+            <img src="imagenes/brazoreina.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Bizcocho enrollado relleno de dulce de leche y cubierto con azúcar glass.Trozo a $900</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 900</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Frutilla</h5>
+            <img src="imagenes/frutilla.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Mermelada roja y dulce, con sabor intenso a frutilla fresca. Frasco de 200g a $2000</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 2000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- termino del inicio -->
+
+    <!-- inicio de postres -->
+    <div class="tab-pane fade show" id="pills-Postres" role="tabpanel"
+aria-labelledby="pills-profile-tab">
+      <h2 class="h4 m-4 Letras">Postres</h2>
+
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Cuchuflis</h5>
+            <img src="imagenes/Cuchufli.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Barquillos crujientes rellenos de dulce de leche, bañados en chocolate u otros dulces. 10 Unidades x $1550</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1550</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Alfajor</h5>
+            <img src="imagenes/alfajor.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Galletas suaves rellenas de dulce de leche y cubiertas de chocolate.</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 500</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Cocadas</h5>
+            <img src="imagenes/cocadas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Bolitas de galletas con manjar y empolvadas con coco rayado. Caja de 20 unidades x $3300</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 3300</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Brazo reina</h5>
+            <img src="imagenes/brazoreina.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Bizcocho enrollado relleno de dulce de leche y cubierto con azúcar glass. Trozo a $900</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 900</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Trufas</h5>
+            <img src="imagenes/TrufasRosa.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Bolitas de chocolate cremoso, recubiertas con cacao en polvo o coco rallado. 20 Unidades x $2000</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 2000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Cupcake</h5>
+            <img src="imagenes/Cupcake.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Esponjoso biscocho de una porcion con ciseño hecho con crema dulce. Cada unidad x $600</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1500</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Berlines</h5>
+            <img src="imagenes/berlines.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Donas rellenas de crema pastelera, espolvoreadas con azúcar. Cada unidad a $700</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 700</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Calzones rotos</h5>
+            <img src="imagenes/calzonesrotos.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Masa frita crujiente espolvoreada con azúcar, con forma de nudo.3 unidades x $1000</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- termino de los postres -->
+    <!---------------------------------------------------------------------------------------------------------------------------->
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <!-- inicio de Mermeladas -->
+    <div class="tab-pane fade show" id="pills-Jugos" role="tabpanel" aria-labelledby="pills-Jugos-tab">
+      <h2 class="h4 m-4 Letras">Mermeladas</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Durazno</h5>
+            <img src="imagenes/durazno.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Dulce y espesa mermelada de durazno, llena de trozos de fruta jugosa. Frasco de 200g a $1800</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1800</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Frutilla</h5>
+            <img src="imagenes/frutilla.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Mermelada roja y dulce, con sabor intenso a frutilla fresca. Frasco de 200g a $2000</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 2000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Mora</h5>
+            <img src="imagenes/mora.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Mermelada oscura y agridulce, con el sabor profundo de las moras maduras. Frasco de 200g a $1800</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1800</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Alcayota</h5>
+            <img src="imagenes/alcayota.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Mermelada fibrosa y dulce, con el sabor característico de la alcayota. Frasco de 200g a $2000</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 2000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Damasco</h5>
+            <img src="imagenes/damasco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Mermelada de color naranja brillante, con el sabor dulce y ligeramente ácido del damasco. Frasco de 200g a $1800</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1800</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Frambuesa</h5>
+            <img src="imagenes/frambuesa.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Mermelada roja y agridulce, con el sabor fresco y vibrante de las frambuesas. Frasco de 200g a $2000</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 2000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Ciruela</h5>
+            <img src="imagenes/ciruela.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Mermelada de color profundo, con un sabor dulce y ligeramente ácido a ciruela. Frasco de 200g a $2000</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 2000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Dulse membrillo</h5>
+            <img src="imagenes/Membrillo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Pasta densa y dulce de color rojizo, hecha de membrillo cocido, perfecta para acompañar quesos y panes. Frasco de 200g a $2000</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 2000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- termino de los Mermeladas -->
+
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <!-- inicio de las tortas -->
+    <div class="tab-pane fade show" id="pills-Tortas" role="tabpanel"
+      aria-labelledby="pills-Tortas-tab">
+      <h2 class="h4 m-4 Letras">Tortas</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Tortas en vaso</h5>
+            <img src="imagenes/TortaVaso.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Deliciosa torta con trosos de frutas, crema y un biscocho esponjoso.en envase de platico.</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1500</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Postres caseros</h5>
+            <img src="imagenes/PostreEnPote.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Deliciosos postres caseros, con gran variedad de sabores, tambien puede personalizarlos, añadiendo alguna fruta en especifico o un tipo de crema.Cada unidad x $1500</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1500</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Flan</h5>
+            <img src="imagenes/Flan.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Delicioso postre de leche, con caramelo encima.Cada unidad x $1200</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1200</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+       
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Pie de limon</h5>
+            <img src="imagenes/piedelimon.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Base crujiente de galleta, relleno cremoso de limón y coronado con merengue dorado. Trozo a $1000</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 1000</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Waffles</h5>
+            <img src="imagenes/Waffle.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Un waffle dorado, crujiente por fuera y esponjoso por dentro, servido con miel de palma y fresas frescas.</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 2500</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Torta Mil Hoja</h5>
+            <img src="imagenes/TortaMilHoja.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Una torta de mil hojas es un postre chileno crujiente con capas de masa y relleno de manjar.</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 3100</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">Cheese Cake</h5>
+            <img src="imagenes/CheeseCake.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Un cheese cake es un postre cremoso con base de galleta, relleno de queso y cubierto con fruta.</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 12500</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 RosaMedio rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center LetrasFnRosa">torta selva negra</h5>
+            <img src="imagenes/selva.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text LetrasFnRosa description">Una torta Selva Negra tiene bizcocho de chocolate, crema chantilly y cerezas.</p>
+              <h5 class="LetrasFnRosa">Precio: <span class="precio">$ 9500</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn RosaClaro button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- termino de los tortas -->
+
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <div class="tab-pane fade show" id="pills-Carrito" role="tabpane1" aria-labelledby="pills-Carrito-tab">
+      <br>
+      <table class="table RosaMedio table-hover">
+        <thead>
+          <tr class="LetrasFnRosa">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal Letras">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn RosaClarito">COMPRAR</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- poner admins -->
+  <footer class="RosaClarito p-3 mt-5">
+    <p class="text-center m-0 Letras">Bocado secreto 
+      <a class="a" href="Portafolio grupal/index.html">ver mas</a>
+    </p>
+    <div class="container my-5">
+<div class="container">
+    <div class="team">
+        <div class="team-member">
+            <a class="perfil" target="_blank"  href="https://sofiacadu.github.io/Mi-portafolio-personal/"><img class="yo" src="imagenes/bruh2.jfif" alt="Equipo 2"></a>
+            <p class="h4 m-4 Letras">Sofía Cáceres</p>
+        </div>
+        <div class="team-member">
+            <a class="perfil" target="_blank"  href="https://giovacudme.github.io/portafolio_personal3/"><img class="yo" src="imagenes/giovanni.jpg" alt="Equipo 1"></a>
+            <p class="h4 m-4 Letras">Giovanni Molinet</p>
+        </div>
+        <div class="team-member">
+            <a class="perfil" target="_blank" href="https://diegomkxc.github.io/portafolio/?authuser=0"><img class="yo" src="imagenes/1000299243.jpg" alt=></a>
+            <p class="h4 m-4 Letras">Diego Rojas</p>
+        </div>
+        <div class="team-member">
+            <a class="perfil" target="_blank"  href="https://cristofoo.github.io/portafolio-mimi-2/"><img class="yo"  src="imagenes/bruh5.jpeg" alt="lol"></a>
+            <p class="h4 m-4 Letras">Emilia Arredondo</p>
+        </div>
+        <div class="team-member">
+            <a class="perfil" target="_blank"  href="https://cristofoo.github.io/portafoliomio/"><img class="yo" src="imagenes/yo.jpg" alt="Equipo 2"></a>
+            <p class="h4 m-4 Letras">Cristofer Fuentes</p>
+        </div>
+        <!-- fin-->
+    </div>
+</div>
+  </footer>
+  
+  <!-- dejar de ponerlos -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>

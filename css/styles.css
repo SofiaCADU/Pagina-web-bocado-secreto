@@ -1,0 +1,113 @@
+body{
+  background-color: #f6f1e6;
+  z-index: 100;
+}
+.description{
+  height: 25px;
+  overflow: hidden;
+  transition: height .3s ease-in .3s;
+}
+.description:hover{
+  height: 80px;
+}
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos{
+  display: flex;
+}
+.table__productos > img{
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.hide, .remove{
+  display: none;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+}
+
+.RosaMedio{
+  background-color: #E683B2;
+}
+ 
+.RosaClaro{
+  background-color: #F8A8C5;
+}
+ 
+.RosaClarito{
+  background-color:  #FBD0D6;
+}
+
+.Letras{
+  color: #43413E;
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.LetrasFnRosa{
+  color: #f6f1e6;
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.yo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.header-fixed{
+  z-index: 999; 
+}
+
+.my-carousel-div{
+  background-color: pink;
+}
+
+#mi-carrito{
+  height: 40;
+  width: 40;
+  position: relative;
+}
+
+#articulos{
+  position: absolute;
+  bottom: -10px;
+  top: -1px;
+  right: -15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.a{
+  color:  #F8A8C5;
+}
+
+.a:hover{
+  color: #E683B2;
+}
